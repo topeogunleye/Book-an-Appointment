@@ -86,3 +86,6 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
+  database: ap
+  username: appointment
+  password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
